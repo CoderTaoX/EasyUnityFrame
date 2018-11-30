@@ -21,7 +21,9 @@
               <e p="ManagerBase.cs" t="Include" />
               <e p="MonoBase.cs" t="Include" />
               <e p="MsgBase.cs" t="Include" />
+              <e p="NetBase.cs" t="Include" />
               <e p="NodeBase.cs" t="Include" />
+              <e p="UIBase.cs" t="Include" />
             </e>
             <e p="Manager" t="Include">
               <e p="AssetManager.cs" t="Include" />
@@ -31,6 +33,8 @@
               <e p="DBManager.cs" t="Include" />
               <e p="GameManager.cs" t="Include" />
               <e p="MsgCenter.cs" t="Include" />
+              <e p="NetManager.cs" t="Include" />
+              <e p="UIManager.cs" t="Include" />
             </e>
           </e>
         </e>

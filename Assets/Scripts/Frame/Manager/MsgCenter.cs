@@ -45,6 +45,8 @@ namespace U3DEventFrame
             gameObject.AddComponent<CharaterManager>();
             gameObject.AddComponent<DBManager>();
             gameObject.AddComponent<GameManager>();
+            gameObject.AddComponent<UIManager>();
+            gameObject.AddComponent<NetManager>();
         }
 
         private void Update()
@@ -89,8 +91,10 @@ namespace U3DEventFrame
                 switch (tmpid)
                 {
                     case (ushort)ManagerID.NetManager:
+                        NetManager.Instance.ProcessEvent(tmpBody);
                         break;
                     case (ushort)ManagerID.UIManager:
+                        UIManager.Instance.ProcessEvent(tmpBody);
                         break;
                     case (ushort)ManagerID.NPCManager:
                         break;

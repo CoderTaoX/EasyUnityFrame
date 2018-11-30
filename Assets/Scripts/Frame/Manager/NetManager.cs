@@ -1,12 +1,12 @@
 ﻿namespace U3DEventFrame
 {
-    public class GameManager : ManagerBase
+    public class NetManager : ManagerBase
     {
-        public static GameManager Instance;
+        public static NetManager Instance;
 
         public void SendMsg(MsgBase msg)
         {
-            if (msg.GetManager() == (int)ManagerID.GameManager)
+            if (msg.GetManager() == (int)ManagerID.NetManager)
             {
                 ProcessEvent(msg);
             }
